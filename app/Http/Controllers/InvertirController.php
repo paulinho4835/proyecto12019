@@ -60,6 +60,15 @@ class InvertirController extends Controller
 
     }
 
+    public function verproy(){
+
+        return view('comprados');
+    }
+
+    public function venta() {
+        return view('venta');
+    }
+
     public function tabla(Request $request)
     {
         $id = $request['id_tipo_proyecto'];
