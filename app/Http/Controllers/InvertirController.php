@@ -27,6 +27,8 @@ class InvertirController extends Controller
             'meses' => 'required',
         ]);
 
+        $iduser = Auth::user()->id;
+
         $invertir = new Invertir();
         $invertir->titulo = $request['titulo'];
         $invertir->descripcion = $request['note'];
@@ -34,6 +36,7 @@ class InvertirController extends Controller
         $invertir->plazo = $request['plazo'];
         $invertir->interes = $request['interes'];
         $invertir->meses = $request['meses'];
+        $invertir->user = $iduser;
       //  $invertir->days = $request['days'];
        // $request['files']->store('files');
 
