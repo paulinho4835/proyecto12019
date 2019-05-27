@@ -13,6 +13,7 @@
 
 
                 @foreach ($tipos as $t)
+                    @if($t->user==$id)
                     <div class="table-row">
                         <div class="visit">{{ $t->titulo }}</div>
 
@@ -25,8 +26,11 @@
                             </form>
                         </div>
                     </div>
+                    @endif
                 @endforeach
             </div>
+
+            <center><a href="{{ url('/home') }}" class="btn btn-info" role="button">Regresar</a></center>
         </div>
     </div>
 

@@ -37,6 +37,7 @@ class InvertirController extends Controller
         $invertir->interes = $request['interes'];
         $invertir->meses = $request['meses'];
         $invertir->user = $iduser;
+        $invertir->owner = $iduser;
       //  $invertir->days = $request['days'];
        // $request['files']->store('files');
 
@@ -65,11 +66,18 @@ class InvertirController extends Controller
 
     public function verproy(){
 
-        return view('comprados');
+        $tipos = Invertir::all();
+        $id = Auth::user()->id;
+
+        return view('comprados' ,['tipos' => $tipos, 'id' => $id ]);
     }
 
     public function venta() {
-        return view('venta');
+
+        $tipos = Invertir::all();
+        $id = Auth::user()->id;
+
+        return view('venta' ,['tipos' => $tipos, 'id' => $id ]);
     }
 
     public function tabla(Request $request)
@@ -177,8 +185,9 @@ class InvertirController extends Controller
 
 
         $tipos = Invertir::all();
+        $id = Auth::user()->id;
 
 
-        return view('lista2' ,['tipos' => $tipos ]);
+        return view('lista2' ,['tipos' => $tipos, 'id' => $id ]);
     }
 }

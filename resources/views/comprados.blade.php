@@ -12,8 +12,26 @@
                 </div>
 
 
+                @foreach ($tipos as $t)
+                    @if($t->user!=$id&&$t->owner==$id)
+                        <div class="table-row">
+                            <div class="visit">{{ $t->titulo }}</div>
+
+                            <div class="serial">
+
+                                <form action="{{ route('tabla') }}" method="POST">
+                                    @csrf
+                                    <input type="hidden" name="id_tipo_proyecto" value="{{ $t->id }}">
+                                    <input type="submit" value="Detalles" class="genric-btn danger">
+                                </form>
+                            </div>
+                        </div>
+                    @endif
+                @endforeach
 
             </div>
+
+            <center><a href="{{ url('/home') }}" class="btn btn-info" role="button">Regresar</a></center>
         </div>
     </div>
 
