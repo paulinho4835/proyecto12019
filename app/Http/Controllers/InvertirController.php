@@ -38,6 +38,7 @@ class InvertirController extends Controller
         $invertir->meses = $request['meses'];
         $invertir->user = $iduser;
         $invertir->owner = $iduser;
+        $invertir->sell = 0;
       //  $invertir->days = $request['days'];
        // $request['files']->store('files');
 
@@ -64,6 +65,36 @@ class InvertirController extends Controller
 
     }
 
+    public function comprar(Request $request){
+
+        $prod = Invertir::findOrFail($request->id_tipo);
+
+        $prod->sell = 1;
+        $prod->save();
+        echo '<script language="javascript">';
+        echo 'alert("Proyecto puesto en venta")';
+        echo '</script>';
+
+        return redirect('home');
+
+    }
+
+    public function compra2(Request $request){
+
+        $iduser = Auth::user()->id;
+        $prod = Invertir::findOrFail($request->id_tipo);
+
+        $prod->sell = 0;
+        $prod->owner = $iduser;
+        $prod->save();
+        echo '<script language="javascript">';
+        echo 'alert("Proyecto comprado")';
+        echo '</script>';
+
+        return redirect('home');
+
+    }
+
     public function verproy(){
 
         $tipos = Invertir::all();
@@ -78,6 +109,14 @@ class InvertirController extends Controller
         $id = Auth::user()->id;
 
         return view('venta' ,['tipos' => $tipos, 'id' => $id ]);
+    }
+
+    public function venta2() {
+
+        $tipos = Invertir::all();
+        $id = Auth::user()->id;
+
+        return view('venta2' ,['tipos' => $tipos, 'id' => $id ]);
     }
 
     public function tabla(Request $request)

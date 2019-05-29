@@ -23,4 +23,7 @@ Route::get('/lista2', 'InvertirController@lista');
 Route::post('/tabla', 'InvertirController@tabla')->name('tabla');
 Route::get('/comprados', 'InvertirController@verproy')->name('comprados');
 Route::get('/venta', 'InvertirController@venta')->name('venta');
+Route::get('/venta2', 'InvertirController@venta2')->name('venta2');
+Route::post('/comprar', 'InvertirController@comprar')->name('comprar');
+Route::post('/compra2', 'InvertirController@compra2')->name('compra2');
 Route::post('/registro', array('as' => 'registro', 'uses' => 'InvertirController@valid'));

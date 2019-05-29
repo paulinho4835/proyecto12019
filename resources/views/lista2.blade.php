@@ -13,7 +13,7 @@
 
 
                 @foreach ($tipos as $t)
-                    @if($t->user==$id)
+                    @if($t->user==$id||$t->owner==$id)
                     <div class="table-row">
                         <div class="visit">{{ $t->titulo }}</div>
 
@@ -22,8 +22,15 @@
                             <form action="{{ route('tabla') }}" method="POST">
                                 @csrf
                                 <input type="hidden" name="id_tipo_proyecto" value="{{ $t->id }}">
-                                <input type="submit" value="Detalles" class="genric-btn danger">
+                                <input type="submit" value="Calcular" class="genric-btn danger">
                             </form>
+                            @if($t->user==$id)
+                            <form action="{{ route('comprar') }}" method="POST">
+                                @csrf
+                                <input type="hidden" name="id_tipo" value="{{ $t->id }}">
+                                <input type="submit" value="Poner en venta" class="genric-btn danger">
+                            </form>
+                                @endif
                         </div>
                     </div>
                     @endif

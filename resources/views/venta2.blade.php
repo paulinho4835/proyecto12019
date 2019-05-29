@@ -13,16 +13,16 @@
 
 
                 @foreach ($tipos as $t)
-                    @if($t->user==$id&&$t->sell==true)
+                    @if($t->user!=$id&&$t->sell==true)
                         <div class="table-row">
                             <div class="visit">{{ $t->titulo }}</div>
 
                             <div class="serial">
 
-                                <form action="{{ route('tabla') }}" method="POST">
+                                <form action="{{ route('compra2') }}" method="POST">
                                     @csrf
-                                    <input type="hidden" name="id_tipo_proyecto" value="{{ $t->id }}">
-                                    <input type="submit" value="Detalles" class="genric-btn danger">
+                                    <input type="hidden" name="id_tipo" value="{{ $t->id }}">
+                                    <input type="submit" value="Comprar proyecto" class="genric-btn danger">
                                 </form>
                             </div>
                         </div>
