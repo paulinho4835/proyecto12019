@@ -210,7 +210,7 @@
 
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" id="registrar" class="btn btn-primary">
                                         Registrar Solicitud
                                     </button>
                                 </div>

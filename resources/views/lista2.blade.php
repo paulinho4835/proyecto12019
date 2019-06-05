@@ -13,7 +13,7 @@
 
 
                 @foreach ($tipos as $t)
-                    @if($t->user==$id||$t->owner==$id)
+                    @if($t->owner==$id)
                     <div class="table-row">
                         <div class="visit">{{ $t->titulo }}</div>
 

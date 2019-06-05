@@ -19,7 +19,7 @@
                 </div>
 
                 <button href="" type="button" class="btn btn-default">Invertir</button>
-                <button onclick="window.location='{{ url('/lista') }}'" type="button" class="btn btn-default">Crear Proyecto</button>
+                <button onclick="window.location='{{ url('/lista') }}'" type="button" id="crearproyecto" class="btn btn-default">Crear Proyecto</button>
                 <button onclick="window.location='{{ url('/lista2') }}'" type="button" class="btn btn-default">Calcular Presupuesto</button>
                 <button onclick="window.location='{{ url('/comprados') }}'" type="button" class="btn btn-default">Proyectos Comprados</button>
                 <button onclick="window.location='{{ url('/venta') }}'" type="button" class="btn btn-default">Proyectos en venta</button>
