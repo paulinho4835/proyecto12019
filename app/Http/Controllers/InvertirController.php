@@ -257,6 +257,9 @@ class InvertirController extends Controller
             $prod = Invertir::findOrFail($request->id_tipo);
             $per = ($prod->invest*100)/$prod->monto;
 
+            echo '<script language="javascript">';
+            echo 'alert("Inversion exitosa")';
+            echo '</script>';
             return view('vistainv' ,['id' => $iduser, 'proy' => $prod, 'per' => $per  ]);
         }
         else{

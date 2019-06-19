@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a32dbb67-e4ef-43d3-88b9-65083428bb02" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InvertirController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/InvertirController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="InvertirController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="InvertirController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvertirController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="261" column="13" lean-forward="true" selection-start-line="261" selection-start-column="13" selection-end-line="261" selection-end-column="13" />
+            <state relative-caret-position="367">
+              <caret line="261" column="29" lean-forward="true" selection-start-line="261" selection-start-column="29" selection-end-line="261" selection-end-column="29" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -157,7 +157,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
@@ -252,9 +252,9 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/vistainv.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/invertir.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/InvertirController.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/InvertirController.php" />
       </list>
     </option>
   </component>
@@ -468,12 +468,12 @@
       <workItem from="1559086724508" duration="5874000" />
       <workItem from="1559705876097" duration="3181000" />
       <workItem from="1560726884493" duration="1127000" />
-      <workItem from="1560884860392" duration="15229000" />
+      <workItem from="1560884860392" duration="15319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58571000" />
+    <option name="totallyTimeSpent" value="58661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1086,16 +1086,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvertirController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="261" column="13" lean-forward="true" selection-start-line="261" selection-start-column="13" selection-end-line="261" selection-end-column="13" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1130,6 +1120,16 @@
             <marker date="1560918373184" expanded="true" signature="2922:2935" ph="..." />
             <marker date="1560918373184" expanded="true" signature="3033:3050" ph="..." />
             <marker date="1560918373184" expanded="true" signature="3756:3765" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvertirController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="261" column="29" lean-forward="true" selection-start-line="261" selection-start-column="29" selection-end-line="261" selection-end-column="29" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
