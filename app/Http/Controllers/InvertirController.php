@@ -39,6 +39,7 @@ class InvertirController extends Controller
         $invertir->user = $iduser;
         $invertir->owner = $iduser;
         $invertir->sell = 0;
+        $invertir->invest = 0;
       //  $invertir->days = $request['days'];
        // $request['files']->store('files');
 
@@ -228,5 +229,51 @@ class InvertirController extends Controller
 
 
         return view('lista2' ,['tipos' => $tipos, 'id' => $id ]);
+    }
+
+    function listainv(){
+        $tipos = Invertir::all();
+        $id = Auth::user()->id;
+
+
+        return view('lista3' ,['tipos' => $tipos, 'id' => $id ]);
+    }
+
+    function invertir(Request $request){
+        $iduser = Auth::user()->id;
+        $prod = Invertir::findOrFail($request->id_tipo);
+
+        return view('invertir' ,['id' => $iduser, 'proy' => $prod ]);
+
+    }
+
+    function vistainv(Request $request){
+        $iduser = Auth::user()->id;
+        $prod = Invertir::findOrFail($request->id_tipo);
+        $newinv = $prod->invest+$request->monto;
+
+        if($prod->monto!=$prod->invest) {
+            Invertir::where('id', $request->id_tipo)->update(['invest' => $newinv]);
+            $prod = Invertir::findOrFail($request->id_tipo);
+            $per = ($prod->invest*100)/$prod->monto;
+
+            return view('vistainv' ,['id' => $iduser, 'proy' => $prod, 'per' => $per  ]);
+        }
+        else{
+            echo '<script language="javascript">';
+            echo 'alert("El proyecto esta lleno")';
+            echo '</script>';
+            return view('invertir' ,['id' => $iduser, 'proy' => $prod ]);
+        }
+
+    }
+
+    function verinv(Request $request){
+        $iduser = Auth::user()->id;
+        $prod = Invertir::findOrFail($request->id_tipo);
+        $per = ($prod->invest*100)/$prod->monto;
+
+        return view('vistainv' ,['id' => $iduser, 'proy' => $prod, 'per' => $per ]);
+
     }
 }
