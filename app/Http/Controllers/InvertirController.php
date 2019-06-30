@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Invertir;
 use App\Garantia;
+use App\Investment;
 use Auth;
 use App\Http\Requests\UploadRequest;
 
@@ -253,6 +254,12 @@ class InvertirController extends Controller
         $newinv = $prod->invest+$request->monto;
 
         if($prod->monto!=$prod->invest) {
+            $investment = new Investment;
+            $investment->usuario = $iduser;
+            $investment->proyecto = $prod;
+            $investment->monto = $request->monto;
+            $investment->save();
+            
             Invertir::where('id', $request->id_tipo)->update(['invest' => $newinv]);
             $prod = Invertir::findOrFail($request->id_tipo);
             $per = ($prod->invest*100)/$prod->monto;
