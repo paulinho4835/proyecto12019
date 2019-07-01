@@ -10,6 +10,7 @@
         <div>
 
             <button onclick="window.location='{{ url('/lista3') }}'" class="btn btn-success">Invertir</button>
+            <button onclick="window.location='{{ url('/misinv') }}'" class="btn btn-success">Mis inversiones</button>
             <button onclick="window.location='{{ url('/lista') }}'" type="button" id="crearproyecto" class="btn btn-success">Crear Proyecto</button>
             <button onclick="window.location='{{ url('/lista2') }}'" type="button" class="btn btn-success">Calcular Presupuesto</button>
             <button onclick="window.location='{{ url('/comprados') }}'" type="button" class="btn btn-success">Proyectos Comprados</button>

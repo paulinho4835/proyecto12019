@@ -286,4 +286,13 @@ class InvertirController extends Controller
         return view('vistainv' ,['id' => $iduser, 'proy' => $prod, 'per' => $per ]);
 
     }
+
+    function misinv(){
+        $tipos = Investment::all();
+        $proy = Invertir::all();
+        $id = Auth::user()->id;
+
+
+        return view('misinv' ,['tipos' => $tipos, 'proy'=> $proy, 'id' => $id ]);
+    }
 }

@@ -30,4 +30,5 @@ Route::post('/compra2', 'InvertirController@compra2')->name('compra2');
 Route::post('/invertir', 'InvertirController@invertir')->name('invertir');
 Route::post('/vistainv', 'InvertirController@vistainv')->name('vistainv');
 Route::post('/verinv', 'InvertirController@verinv')->name('verinv');
+Route::get('/misinv', 'InvertirController@misinv')->name('misinv');
 Route::post('/registro', array('as' => 'registro', 'uses' => 'InvertirController@valid'));
