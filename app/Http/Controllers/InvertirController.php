@@ -256,7 +256,7 @@ class InvertirController extends Controller
         if($prod->monto!=$prod->invest) {
             $investment = new Investment;
             $investment->usuario = $iduser;
-            $investment->proyecto = $prod;
+            $investment->proyecto = $prod->id;
             $investment->monto = $request->monto;
             $investment->save();
             
