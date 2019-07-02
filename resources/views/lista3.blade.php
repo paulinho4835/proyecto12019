@@ -22,6 +22,7 @@
                 <table align="center" style="width:70%">
                 <tr><th>Nombre del proyecto</th><th></th></tr>
                 @foreach ($tipos as $t)
+                    @if($t->owner!=$id)
                         <div class="table-row">
 
                                 <tr>
@@ -38,6 +39,7 @@
                                 </tr>
 
                         </div>
+                        @endif
                 @endforeach
                 </table>
             </div>

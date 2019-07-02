@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a32dbb67-e4ef-43d3-88b9-65083428bb02" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/resources/views/lista3.blade.php" afterPath="$PROJECT_DIR$/resources/views/lista3.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +19,7 @@
       <file leaf-file-name="InvertirController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvertirController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
+            <state relative-caret-position="1370">
               <caret line="295" column="66" lean-forward="false" selection-start-line="295" selection-start-column="66" selection-end-line="295" selection-end-column="66" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
@@ -98,17 +97,18 @@
       <file leaf-file-name="lista3.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/lista3.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="272">
+              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding>
                 <element signature="e#491#508#0#HTML" expanded="true" />
-                <marker date="1562041150220" expanded="true" signature="9:22" ph="..." />
-                <marker date="1562041150220" expanded="true" signature="34:43" ph="..." />
-                <marker date="1562041150220" expanded="true" signature="599:611" ph="..." />
-                <marker date="1562041150220" expanded="true" signature="760:772" ph="..." />
-                <marker date="1562041150220" expanded="true" signature="889:908" ph="..." />
-                <marker date="1562041150220" expanded="true" signature="1058:1066" ph="..." />
-                <marker date="1562041150220" expanded="true" signature="1438:1452" ph="..." />
+                <marker date="1562044587163" expanded="true" signature="9:22" ph="..." />
+                <marker date="1562044587163" expanded="true" signature="34:43" ph="..." />
+                <marker date="1562044587163" expanded="true" signature="599:611" ph="..." />
+                <marker date="1562044587163" expanded="true" signature="637:651" ph="..." />
+                <marker date="1562044587163" expanded="true" signature="800:812" ph="..." />
+                <marker date="1562044587163" expanded="true" signature="929:948" ph="..." />
+                <marker date="1562044587163" expanded="true" signature="1098:1106" ph="..." />
+                <marker date="1562044587163" expanded="true" signature="1509:1523" ph="..." />
               </folding>
             </state>
           </provider>
@@ -430,12 +430,12 @@
       <workItem from="1560884860392" duration="17169000" />
       <workItem from="1561766787859" duration="2147000" />
       <workItem from="1561946274991" duration="2673000" />
-      <workItem from="1562039723037" duration="1086000" />
+      <workItem from="1562039723037" duration="1915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66417000" />
+    <option name="totallyTimeSpent" value="67246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -841,16 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvertirController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="295" column="66" lean-forward="false" selection-start-line="295" selection-start-column="66" selection-end-line="295" selection-end-column="66" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/invertir.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -894,19 +884,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvertirController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1370">
+          <caret line="295" column="66" lean-forward="false" selection-start-line="295" selection-start-column="66" selection-end-line="295" selection-end-column="66" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/lista3.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="272">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding>
             <element signature="e#491#508#0#HTML" expanded="true" />
-            <marker date="1562041150220" expanded="true" signature="9:22" ph="..." />
-            <marker date="1562041150220" expanded="true" signature="34:43" ph="..." />
-            <marker date="1562041150220" expanded="true" signature="599:611" ph="..." />
-            <marker date="1562041150220" expanded="true" signature="760:772" ph="..." />
-            <marker date="1562041150220" expanded="true" signature="889:908" ph="..." />
-            <marker date="1562041150220" expanded="true" signature="1058:1066" ph="..." />
-            <marker date="1562041150220" expanded="true" signature="1438:1452" ph="..." />
+            <marker date="1562044587163" expanded="true" signature="9:22" ph="..." />
+            <marker date="1562044587163" expanded="true" signature="34:43" ph="..." />
+            <marker date="1562044587163" expanded="true" signature="599:611" ph="..." />
+            <marker date="1562044587163" expanded="true" signature="637:651" ph="..." />
+            <marker date="1562044587163" expanded="true" signature="800:812" ph="..." />
+            <marker date="1562044587163" expanded="true" signature="929:948" ph="..." />
+            <marker date="1562044587163" expanded="true" signature="1098:1106" ph="..." />
+            <marker date="1562044587163" expanded="true" signature="1509:1523" ph="..." />
           </folding>
         </state>
       </provider>
