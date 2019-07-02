@@ -15,6 +15,7 @@
                 @foreach ($proy as $t)
                 @foreach ($tipos as $ti)
                         @if ($ti->proyecto==$t->id)
+                            @if ($ti->usuario==$id)
                     <div class="table-row">
 
                         <div class="visit">{{ $t->titulo }}</div>
@@ -25,6 +26,7 @@
 
                         </div>
                     </div>
+                        @endif
                         @endif
                 @endforeach
                     @endforeach
