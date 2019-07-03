@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/lista', 'InvertirController@formula');
-Route::get('/lista2', 'InvertirController@lista');
+Route::get('/lista2', 'InvertirController@lista')->name('lista2');
 Route::get('/lista3', 'InvertirController@listainv');
 Route::post('/tabla', 'InvertirController@tabla')->name('tabla');
 Route::get('/comprados', 'InvertirController@verproy')->name('comprados');

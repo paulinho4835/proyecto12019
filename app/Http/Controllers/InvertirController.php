@@ -63,7 +63,7 @@ class InvertirController extends Controller
         echo '<script language="javascript">';
         echo 'alert("Registro exitoso")';
         echo '</script>';
-        return view('home');
+        return view('regex', ['id' => $idg ]);
 
     }
 
