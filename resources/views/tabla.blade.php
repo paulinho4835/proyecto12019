@@ -11,28 +11,29 @@
 
 @section('content')
 
-    <h1>DETALLES</h1>
-
-
-    <label for="">Nombre del proyecto: </label> <br><br>
-    <label for="">{{ $proy->titulo }}</label>
-    <br><br>
-    <label for="">Descripcion:</label><br><br>
-    <label for="">{{ $proy->descripcion }}</label><br><br>
-    <br>
-    <br>
-
     <style>
         table, th, td {
             border: 1px solid black;
         }
     </style>
 
-    <br><br>
-    <label for="">Tabla</label>
+    <center><h1>DETALLES</h1></center>
 
+
+    <table align="center" style="width:70%">
+        <tr><th>Nombre del proyecto</th><th>Descripcion</th></tr>
+        <tr>
+            <td><label for="">{{ $proy->titulo }}</label></td>
+            <td><label for="">{{ $proy->descripcion }}</label></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+
+    <center><h4>Tabla de Presupuesto</h4></center>
     <div class="table">
-        <table>
+        <table align="center">
             <tr>
                 <th>Periodo</th>
                 <th>Saldo Inicial</th>
@@ -62,6 +63,11 @@
 
 
     </div>
+
+    <br>
+    <br>
+    <center><a href="{{ url('/lista2') }}" class="btn btn-info" role="button">Proyectos Creados</a></center>
+    <center><a href="{{ url('/home') }}" class="btn btn-info" role="button">Menu Principal</a></center>
 
 
 @endsection
